@@ -21,11 +21,11 @@ Note, if you use this template to create another repo you'll need to change the 
 Make sure your credentials are defined in $HOME/.oci/config file. As Terraform takes takes the default value from the .oci/config file
 
 For eg : [DEFAULT]
-user=ocid1.user.oc1..aaaaaxxxwf3a \\
-fingerprint=de:50:15:13:...:d6 \\
-key_file=/Users/shadab/.oci/oci_api_key.pem \\
-tenancy=ocid1.tenancy.oc1..aaaaaaaa2txfa \\
-compartment=ocid1.compartment.oc1..aaaa5pti7sq \\
+user=ocid1.user.oc1..aaaaaxxxwf3a /
+fingerprint=de:50:15:13:...:d6 /
+key_file=/Users/shadab/.oci/oci_api_key.pem /
+tenancy=ocid1.tenancy.oc1..aaaaaaaa2txfa /
+compartment=ocid1.compartment.oc1..aaaa5pti7sq /
 region=us-ashburn-1
 
 $ git clone https://github.com/shadabshaukat/ocidatalake.git && cd ocidatalake
