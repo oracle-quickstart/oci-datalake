@@ -1,4 +1,4 @@
-# oci-quickstart-template
+# oci-datalake
 
 The [Oracle Cloud Infrastructure (OCI) Quick Start](https://github.com/oracle-quickstart?q=oci-quickstart) is a collection of examples that allow Oracle Cloud Infrastructure users to get a quick start deploying advanced infrastructure on OCI.
 
