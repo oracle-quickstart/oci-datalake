@@ -21,24 +21,34 @@ Note, if you use this template to create another repo you'll need to change the 
 Make sure your credentials are defined in $HOME/.oci/config file. As Terraform takes takes the default value from the .oci/config file
 
 For eg : [DEFAULT]
-user=ocid1.user.oc1..aaaaaxxxwf3a /
-fingerprint=de:50:15:13:...:d6 /
-key_file=/Users/shadab/.oci/oci_api_key.pem /
-tenancy=ocid1.tenancy.oc1..aaaaaaaa2txfa /
-compartment=ocid1.compartment.oc1..aaaa5pti7sq /
+user=ocid1.user.oc1..aaaaaxxxwf3a \
+fingerprint=de:50:15:13:...:d6 \
+key_file=/Users/shadab/.oci/oci_api_key.pem \
+tenancy=ocid1.tenancy.oc1..aaaaaaaa2txfa \
+compartment=ocid1.compartment.oc1..aaaa5pti7sq \
 region=us-ashburn-1
 
 $ git clone https://github.com/shadabshaukat/ocidatalake.git && cd ocidatalake
 
-### Build
-
-Initialize Terraform for OCI and Random Provider
+### Initialize
+Initialize Terraform provider for OCI and Random
 
 $ terraform init
 
+### Build Plan
+
+$ terraform plan -var-file=config.tfvars -out oci_datalake.out
+
+### Apply
+
+$ terraform apply "oci_datalake.out"
+
+### Destroy
+
+$ terraform destroy -var-file=config.tfvars
 
 
-### Deploy
+## Deploy with ORM
 
 1. [Login](https://console.us-ashburn-1.oraclecloud.com/resourcemanager/stacks/create) to Oracle Cloud Infrastructure to import the stack
     > `Home > Solutions & Platform > Resource Manager > Stacks > Create Stack`
