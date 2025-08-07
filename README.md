@@ -56,4 +56,19 @@ $ terraform destroy -var-file=config.tfvars
 2. Upload the `master.zip` and provide a name and description for the stack
 ![Create Stack](./images/127606301-4a6e6eb3-642e-470c-bbfb-d66353a189bc.png)
 
-3. Configure the Stack. The UI will present the variables to the user dynamically, based on their selections. 
+3. Configure the Stack. The UI will present the variables to the user dynamically, based on their selections.
+
+## Contributing
+
+This project welcomes contributions from the community. Before submitting a pull request, please [review our contribution guide](./CONTRIBUTING.md)
+
+## Security
+
+Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process
+
+## License
+
+Copyright (c) 2018-2020 Oracle and/or its affiliates.
+
+Released under the Universal Permissive License v1.0 as shown at
+<https://oss.oracle.com/licenses/upl/>.
